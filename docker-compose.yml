@@ -18,7 +18,7 @@ services:
     memswap_limit: ${MEM_LIMIT}
     cpus: ${CPU_LIMIT}
     ports:
-      - ${WSMAIL_HTTP_PORT}:8990
+      - ${WSMAIL_HTTP_PORT}:8080
     environment:
       #DEFAUT
       SPRING_MAIL_PORT: ${WSMAIL_SPRING_MAIL_PORT}
