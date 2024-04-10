@@ -57,7 +57,7 @@ Les objectifs des déploiements continus de theses-docker sont les suivants (cf 
 - git push (le plus couramment merge) sur la branche ``main`` provoque un déploiement automatique sur le serveur ``diplotaxis2-test``
 - git tag X.X.X (associé à une release) sur la branche ``main`` permet un déploiement (non automatique) sur le serveur ``diplotaxis2-prod``
 
-Le déploiement automatiquement de ``theses-docker`` utilise l'outil [watchtower](https://containrrr.dev/watchtower/). Pour permettre ce déploiement automatique avec watchtower, il suffit de positionner à ``false`` la variable suivante dans le fichier ``/opt/pod/ws-mail-docker/.env`` :
+Le déploiement automatiquement de ``ws-mail-docker`` utilise l'outil [watchtower](https://containrrr.dev/watchtower/). Pour permettre ce déploiement automatique avec watchtower, il suffit de positionner à ``false`` la variable suivante dans le fichier ``/opt/pod/ws-mail-docker/.env`` :
 ```env
 WSMAIL_WATCHTOWER_RUN_ONCE=false
 ```
